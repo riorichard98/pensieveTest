@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML Dropdown</title>
+</head>
+<body>
+
+  <label for="deviceDropdown">Select device id:</label>
+  <select id="deviceDropdown" name="device" onchange="handleSelect(this.value)">
+    <option value="">Select device id</option>
+    <option value="device1">Device 1</option>
+    <option value="device2">Device 2</option>
+    <option value="device3">Device 3</option>
+  </select>
+
+  <script>
+    function handleSelect(value) {
+      console.log('Selected value:', value);
+      // You can perform additional actions here based on the selected value
+    }
+  </script>
+
+</body>
+</html>
